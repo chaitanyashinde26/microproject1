@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin care</title>
+  <style>
+  .navbar {
+            background-color: rgb(51, 117, 167);
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar img {
+            height: 60px;
+            max-width: 100%;
+            margin-left: 20px;
+        }
+        .nav-links {
+            margin-right: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 15px;
+            transition: transform 0.4s;
+            display: inline-flex;
+            align-items: center;
+        }
+        .nav-links a i {
+            margin-right: 8px;
+            transition: transform 0.3s;
+        }
+        .nav-links a:hover {
+            transform: scale(1.2);
+        }
+        .nav-links a:hover i {
+            transform: rotate(360deg);
+        }        
+ 
+    /* CSS for Flexbox Layout */
+    .product-container {
+      display: flex;                                        
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px; /* Adjust space between products */
+    }
+
+    .product {
+      width: 23%; /* Each product takes up 1/4th of the width */
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .product .price {
+      font-size: 16px;
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+    <img src="file:///C:/Users/hp/Desktop/micro%20project/HEAD.jpg">
+    <div class="nav-links">
+        <a href="mainpage.html"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-shopping-bag"></i> Shop</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+    </div>
+</div>	
+  <div class="product-container">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81tCpJDUl+L._SY355_.jpg" alt="FACE WASH">
+      <h3>Face Wash for Men</h3>
+      <p>Muuchstac Ocean Face Wash for Men | Fight Acne & Pimples, Brighten Skin, Clears Dirt, Oil Control, Refreshing Feel - Multi-Action Formula (3x100 ml)</p>
+      <div class="price">-64% ₹320 ₹106.67 per ml(₹106.67 /100 ml)</div>
+	  <a href="file:///C:/Users/hp/Desktop/micro%20project/SKIN%20CARE%201.html">
+    <button style="background-color: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">
+        Buy Now
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71F+pWUo1nL._SY355_.jpg" alt="CARE KIT">
+      <h3>Care Kit</h3>
+      <p>Pilgrim Korean Beauty Flawless Skin Face Care Kit With Vitamin C Night Serum & Jute Kit Bag | Daily Face Wash 100 Ml, Refreshing Face Mist & Toner 100 Ml, Brightening Day Cream Spf50 100 Gm)</p>
+      <div class="price">-21% ₹1,265 ₹316.25 per count(₹316.25 / count)</div>
+	  <a href="file:///C:/Users/hp/Desktop/micro%20project/SKIN%20CARE%202.html">
+    <button style="background-color: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">
+        Buy Now
+    </button>
+</a>
+    </div>
+    <div class="product">
+      <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/sunscreen/i/i/c/30-multivitamin-gel-uva-uvb-protection-zero-white-cast-50-original-imaha69zmwgy244b.jpeg?q=70&crop=false" alt="SUNSCREEN">
+      <h3>Sunscreen</h3>
+      <p>Dermatouch Sunscreen - SPF 50 PA+++ Multivitamin Gel | UVA-UVB Protection | Zero White Cast (30 g)</p>
+      <div class="price">₹189₹1995% off</div>
+	  <a href="file:///C:/Users/hp/Desktop/micro%20project/SKIN%20CARE%203.html">
+    <button style="background-color: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">
+        Buy Now
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61R5hjLxmTL._SY450_.jpg" alt="FACE WASH">
+      <h3>Face Wash for Womens</h3>
+      <p>BELLAVITA Beyond Bright Face Wash | Niacinamide, Alpha Arbutin & Mulberry | Treats Pigmentation | Repairs Skin Barrier | pH Balanced | Non-Irritating | Men and Women 100 ml</p>
+      <div class="price">-54% ₹159 ₹159.00 per ml(₹159 /100 ml)</div>
+	  <a href="file:///C:/Users/hp/Desktop/micro%20project/SKIN%20CARE%20%204.html">
+    <button style="background-color: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">
+        Buy Now
+    </div>
+  </div>
+</body>
+</html>        ,

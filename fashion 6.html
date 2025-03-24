@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <title>Shoping Sphere - Jewellery Set</title>
+	<link rel="shortcut icon" href="42b0f8bc-6ee5-45db-98a7-47733e55ef6c-removebg-preview.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+	.navbar {
+            background-color: rgb(51, 117, 167);
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar img {
+            height: 60px;
+            max-width: 100%;
+            margin-left: 20px;
+        }
+        .nav-links {
+            margin-right: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 15px;
+            transition: transform 0.4s;
+            display: inline-flex;
+            align-items: center;
+        }
+        .nav-links a i {
+            margin-right: 8px;
+            transition: transform 0.3s;
+        }
+        .nav-links a:hover {
+            transform: scale(1.2);
+        }
+        .nav-links a:hover i {
+            transform: rotate(360deg);
+        }        
+	.container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 20px rgb(51, 117, 167);
+        }
+   	.image-slider-container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+	    }
+    .image-slider {
+            display: flex;
+            overflow: hidden;
+            width: 400px
+    }
+    .image-slider img {
+            width: 400px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out;
+    }
+	        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+}
+	.prev { left: 30px; }
+	  .next { right: 30px; }
+	    .prev:hover, 
+ 		.next:hover { background: rgba(0, 0, 0, 0.8); 
+}
+        }
+        .product-details {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .price {
+            color: red;
+            font-size: 22px;
+        }
+        .specs {
+            list-style: none;
+            padding: 0;
+        }
+        .specs li {
+            background: #ddd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 5px;
+            margin: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.35);
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: rgb(51, 117, 167);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 7px;
+            margin: 15px;
+            transition: background 0.5s;
+        }
+        .buttons button:hover {
+        .image-slider-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .image-slider {
+            display: flex;
+            scroll-behavior: smooth;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            width: 400px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .image-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .image-slider img {
+            flex: 0 0 100%;
+            width: 400px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            scroll-snap-align: start;
+        }
+            background-color: rgb(112, 3, 255);
+        }
+    </style>
+	
+		<script>
+    function scrollLeft() {
+        document.getElementById('slider').scrollBy({ left: -400, behavior: 'smooth' });
+    }
+    function scrollRight() {
+        document.getElementById('slider').scrollBy({ left: 400, behavior: 'smooth' });
+    }
+</script>
+
+</head>
+<body>
+<div class="navbar">
+    <img src="file:///C:/Users/hp/Desktop/micro%20project/HEAD.jpg">
+    <div class="nav-links">
+        <a href="mainpage.html"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-shopping-bag"></i> Shop</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+    </div>
+</div>
+    </div>    
+	<div class="image-slider-container">
+    <button class="prev" onclick="scrollLeft()">&#10094;</button>
+    <div class="image-slider" id="slider">
+        <img src="https://m.media-amazon.com/images/I/71J8gBJQVSL._SY395_.jpg" alt="Image 1">
+        <img src="https://m.media-amazon.com/images/I/616ZmaNcqjL._SY395_.jpg" alt="Image 2">
+        <img src="https://m.media-amazon.com/images/I/61frrtdFCNL._SY395_.jpg" alt="Image 3">
+        <img src="https://m.media-amazon.com/images/I/711l+2TGYCL._SY535_.jpg" alt="Image 4">
+    </div>
+    <button class="next" onclick="scrollRight()">&#10095;</button>
+</div>
+        <div class="product-details">
+            <h2>Shining Diva Fashion Latest Stylish Design Fancy Pearl Bracelet Earrings Necklace Jewellery Set for Women (15214s)</h2>
+            <p class="price">-80% ₹499</p>
+            <p><b>product-details</b></p>
+            <ul class="specs">
+                <li>Clasp type:-Lobster Clasp</li>
+                <li>Occasion type:-Wedding, Birthday</li>
+                <li>Chain type:-Fancy</li>
+                
+            </ul>
+        </div>
+        
+        <
+        
+        <div class="buttons">
+            <button>Add to Cart</button>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
